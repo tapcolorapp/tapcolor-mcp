@@ -1,0 +1,17 @@
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    required:
+      - tapcolorApiKey
+    properties:
+      tapcolorApiKey:
+        type: string
+        title: TapColor API Key
+        description: API key issued by TapColor. Request one at https://tapcolor.app/contact/
+  commandFunction: |-
+    (config) => ({
+      command: 'npx',
+      args: ['-y', '@tapcolorapp/mcp'],
+      env: { TAPCOLOR_API_KEY: config.tapcolorApiKey }
+    })
