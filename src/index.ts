@@ -36,7 +36,7 @@ function fail(err: unknown) {
   return { isError: true, content: [{ type: "text" as const, text: msg }] };
 }
 
-const server = new McpServer({ name: "tapcolor", version: "1.0.0" });
+const server = new McpServer({ name: "tapcolor", version: "1.0.1" });
 
 server.tool(
   "list_categories",

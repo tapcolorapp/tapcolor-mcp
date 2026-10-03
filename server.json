@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.tapcolorapp/tapcolor",
+  "description": "Browse TapColor coloring categories and collections — lets AI assistants explore 25 categories and 750+ collections.",
+  "repository": {
+    "url": "https://github.com/tapcolorapp/tapcolor-mcp",
+    "source": "github"
+  },
+  "version": "1.0.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@tapcolorapp/mcp",
+      "version": "1.0.1",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        {
+          "description": "Your TapColor API key (request one at https://tapcolor.app/contact/)",
+          "isRequired": true,
+          "format": "string",
+          "isSecret": true,
+          "name": "TAPCOLOR_API_KEY"
+        }
+      ]
+    }
+  ]
+}

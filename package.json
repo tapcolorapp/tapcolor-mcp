@@ -1,6 +1,7 @@
 {
   "name": "@tapcolorapp/mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "mcpName": "io.github.tapcolorapp/tapcolor",
   "description": "MCP server for the TapColor Developer API — let AI assistants browse coloring categories and collections.",
   "type": "module",
   "bin": { "tapcolor-mcp": "dist/index.js" },
