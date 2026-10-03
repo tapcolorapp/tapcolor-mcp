@@ -1,0 +1,41 @@
+{
+  "name": "@tapcolorapp/mcp",
+  "version": "1.0.0",
+  "description": "MCP server for the TapColor Developer API — let AI assistants browse coloring categories and collections.",
+  "type": "module",
+  "bin": { "tapcolor-mcp": "dist/index.js" },
+  "files": ["dist", "README.md"],
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --clean",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "tapcolor",
+    "mcp",
+    "model-context-protocol",
+    "coloring",
+    "api",
+    "ai",
+    "claude",
+    "llm"
+  ],
+  "homepage": "https://developer.tapcolor.app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tapcolorapp/tapcolor-mcp.git"
+  },
+  "bugs": { "url": "https://tapcolor.app/contact/" },
+  "author": "TapColor",
+  "license": "MIT",
+  "publishConfig": { "access": "public" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@tapcolorapp/api": "^1.0.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.0"
+  }
+}
